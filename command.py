@@ -6,8 +6,9 @@ from local import clean
 
 def init():
     flag = 0
-    src_path = './src.md'
-    options, args = getopt.getopt(sys.argv[1:], "vhd:o:c", ["version", "help", "db=", "output=", "clean"])
+    src_path = os.getcwd()+'/src.md'
+    options, args = getopt.getopt(sys.argv[1:], "vhd:o:c", [
+                                  "version", "help", "db=", "output=", "clean"])
     for opt_name, opt_value in options:
         if opt_name in ('-h', '--help'):
             show_help()
