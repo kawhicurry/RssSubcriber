@@ -1,9 +1,12 @@
+import command
+import feed
 
 
 def main():
     pass
-    # init
+    command.init()
     # parse
+    feed.parse_url()
 
 
 if __name__ == '__main__':

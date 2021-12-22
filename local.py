@@ -1,6 +1,6 @@
 import os
 
-path = {
+settings = {
     'src_path': '',
     'db_path': '',
     'out_path': '',
@@ -28,3 +28,16 @@ def has_record_url():
 def to_markdown():
     pass
     # add new information to markdown
+
+
+def clean_all():
+    clean_db()
+    clean_out()
+
+
+def clean_db():
+    pass
+
+
+def clean_out():
+    pass
